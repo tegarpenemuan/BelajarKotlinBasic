@@ -6,6 +6,7 @@ fun main() {
     data()
     controlFlowIf()
     controlFlowWhen()
+    controlFlowFor()
 }
 
 /**membuat function di kotlin yaitu dengan 'fun nama_function () { ... }'*/
@@ -79,6 +80,17 @@ fun controlFlowWhen() {
         "hard" -> println("Tegar has an expert")
         else -> println("Tegar has no skill")
     }
+}
+
+fun controlFlowFor() {
+    println("For Dengan Until")
+    for(x in 1 until 10) print(x) //Output 123456789
+    println("")
+    println("For Dengan ..")
+    for (y in 1..10) print(y) //Output 12345678910
+    println("")
+    println("For Dengan until dan Step 2")
+    for (z in 1 until 10 step 2) print(z) //Output 13579
 }
 
 

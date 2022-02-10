@@ -5,6 +5,7 @@ fun main() {
     message()
     data()
     controlFlowIf()
+    controlFlowWhen()
 }
 
 /**membuat function di kotlin yaitu dengan 'fun nama_function () { ... }'*/
@@ -66,6 +67,17 @@ fun controlFlowIf() {
         println("Umur Pas Tunggu 1 Tahun Lagi")
     } else {
         println("Maaf Tidak Memenuhi Syarat")
+    }
+}
+
+fun controlFlowWhen() {
+    val tegarLevel: String = "hard"
+
+    when(tegarLevel) {
+        "beginner" -> println("Tegar has a basic skill")
+        "medium" -> println("Tegar has a intermediate skill")
+        "hard" -> println("Tegar has an expert")
+        else -> println("Tegar has no skill")
     }
 }
 

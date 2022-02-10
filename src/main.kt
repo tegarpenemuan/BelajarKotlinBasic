@@ -1,18 +1,22 @@
 /**fun main() adalah function yang dijalankan pertama kali atau disebut dengan entri point*/
 fun main() {
-    println("Hello World")
+    println("Hello World") //main() => Hello World
     getHello()
     message()
     data()
     controlFlowIf()
     controlFlowWhen()
     controlFlowFor()
+    dataCollection()
+    dataCollection2()
 }
 
 /**membuat function di kotlin yaitu dengan 'fun nama_function () { ... }'*/
 fun getHello() {
     println("Hello Saya Dari Function getHello")
 }
+//getHello() => Hello Saya Dari Function getHello
+
 
 /**Belajar Variabel kotlin
 * Val => variabel yang tidak bisa diubah nilainya
@@ -26,6 +30,8 @@ fun message() {
     name = "Penemuan"
     println(name)
 }
+//message() => val -> Hai
+//             var -> Penemuan*
 
 
 /**Belajar Data Types atau Type Data
@@ -45,6 +51,7 @@ fun data() {
 
     println("Nama Saya $name dan Umur Saya $age Tahun")
 }
+//data() => Nama Saya Tegar Penemuan dan Umur Saya 20 Tahun
 
 
 
@@ -91,17 +98,25 @@ fun controlFlowFor() {
     println("")
     println("For Dengan until dan Step 2")
     for (z in 1 until 10 step 2) print(z) //Output 13579
+    println("")
+}
+
+/**Collection => mudahnya seperti Array atau List
+ * fungsi collection ini adalah untuk membungkus data
+ * */
+fun dataCollection() {
+    val names = arrayOf("Tegar", "Penemuan", "Anis","Marcela")
+    for (name in names) println(name)
+}
+
+fun dataCollection2() {
+    val nameList = ArrayList<String>()
+    nameList.add("1.Tegar")
+    nameList.add("2.Penemuan")
+    nameList.add("3.Anis")
+    nameList.add("4.Marcela")
+
+    for (name in nameList) println(name)
 }
 
 
-/**Output
-* main() => Hello World
-*
-* getHello() => Hello Saya Dari Function getHello
-*
-* message() => val -> Hai
-*              var -> Penemuan*
- *              
- * data() => Nama Saya Tegar Penemuan dan Umur Saya 20 Tahun    
- *          
-* */

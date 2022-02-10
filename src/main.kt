@@ -4,6 +4,7 @@ fun main() {
     getHello()
     message()
     data()
+    controlFlowIf()
 }
 
 /**membuat function di kotlin yaitu dengan 'fun nama_function () { ... }'*/
@@ -45,7 +46,28 @@ fun data() {
 
 
 
+/**Control Flow
+ *
+ *if else if
+ *
+ * when
+ *
+ * for
+ *
+ * while
+ * */
+fun controlFlowIf() {
+    val minAge: Int = 13
+    val tegarAge: Int = 20
 
+    if (tegarAge > minAge) {
+        println("Memenuhi Syarat")
+    } else if(tegarAge == minAge) {
+        println("Umur Pas Tunggu 1 Tahun Lagi")
+    } else {
+        println("Maaf Tidak Memenuhi Syarat")
+    }
+}
 
 
 /**Output
